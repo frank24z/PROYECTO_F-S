@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Una Sorpresa...</title>
+    <link rel="stylesheet" href="style.css">
+    
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+</head>
+<body>
+
+    <audio id="cancionMorat" src="morat.mp3"></audio>
+
+    <div id="password-container">
+        <h2>🔒 Es para ti SCD🔒</h2>
+        <p>Introduce nuestra contraseña:</p>
+        <input type="password" id="passwordInput" placeholder="XXXX">
+        <button id="passwordButton">Entrar</button>
+        <p id="passwordError" class="hidden">¡Esa no es! Intenta de nuevo.</p>
+    </div>
+
+    <div id="start-container" class="hidden">
+        <img src="chenford.gif" alt="Aventura" class="start-gif"> 
+        <h1>¡Una pequeña sorpresa para ti!</h1>
+        <p>¿Lista para recordar nuestra historia?</p>
+        <button id="startButton">Iniciar</button>
+    </div>
+
+    <div id="story-container" class="hidden"> 
+        
+        <div class="slide active">
+            <img src="foto1.jpg" alt="Recuerdo 1">
+            <h2>2018 - Nuestro Comienzo</h2>
+            <p>Ese año que nos conocimos. No sabía lo que me esperaba...</p>
+        </div>
+        <div class="slide">
+            <img src="foto2.jpg" alt="Recuerdo 2">
+            <h2>2022 - Nuestro Primer Viaje</h2>
+            <p>Nuestra primera gran aventura juntos.</p>
+        </div>
+        <div class="slide">
+            <img src="foto3.jpg" alt="Recuerdo 2">
+            <h2>2023 - Y muchas más aventuras</h2>
+            <p>Seguimos acumulando kilometros.</p>
+        </div>
+        <div class="slide">
+             <img src="foto4.jpg" alt="Recuerdo 3">
+            <h2>Hoy - Más fuertes que nunca</h2>
+            <p>Mirando todo lo que hemos construido...</p>
+        </div>
+
+        <button id="nextButton">Siguiente &rarr;</button>
+    </div>
+
+    <main id="proposal-container" class="hidden">
+        <img src="https://media.tenor.com/gUiu1zyxfzYAAAAi/bear-kiss-bear-love.gif" alt="Ositos tiernos">
+        <h1>...Y solo puedo pensar en una cosa.</h1>
+        <h1 id="pregunta">¿Quieres casarte conmigo?</h1>
+
+        <div class="buttons">
+            <button id="yesButton">SÍ, ACEPTO ❤️</button>
+            <button id="noButton">No</button>
+        </div>
+        <small class="volume-note">(¡Antes... Sube el volumen! 🎧)</small>
+    </main>
+
+    <div id="mensajeFinal" class="hidden">
+        <img src="celebracion.gif" alt="¡Celebrando!" class="gif-final">
+        <h1>¡DIJO QUE SÍ!</h1>
+        <h2>Y ahora la pregunta es...</h2>
+        <h1 class="titulo-cancion">¿A Dónde Vamos?</h1>
+        <p class="lyrics">"Y no sé, no sé, no sé... Cómo pude convencerte... "</p>
+        <p class="te-amo">¡Te amo enanita!</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

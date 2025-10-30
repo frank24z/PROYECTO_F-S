@@ -1,0 +1,279 @@
+/* Estilos generales */
+body {
+    background-color: #fce4ec;
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+}
+
+/* ----- ESTILOS DE LA PANTALLA DE CONTRASEÑA (PANTALLA 0) ----- */
+#password-container {
+    text-align: center; 
+    background: white;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    animation: fadeIn 0.5s ease-in; 
+}
+
+#password-container h2 {
+    color: #c2185b;
+    margin-top: 0;
+}
+
+#password-container p {
+    font-size: 1.1em;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+#passwordInput {
+    font-size: 1.2em;
+    padding: 10px;
+    width: 80%;
+    margin-bottom: 20px;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    text-align: center;
+}
+
+#passwordButton {
+    background-color: #4CAF50; 
+    color: white;
+    padding: 15px 40px;
+    font-size: 1.3em;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s;
+    width: 90%;
+}
+
+#passwordError {
+    color: red;
+    font-size: 0.9em !important;
+    margin-top: 10px;
+    margin-bottom: 0 !important;
+}
+
+
+/* ----- ESTILOS DE LA PANTALLA DE INICIO (PANTALLA 1) ----- */
+#start-container {
+    text-align: center; 
+    background: white;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    animation: fadeIn 0.5s ease-in; 
+}
+
+.start-gif { 
+    width: 700px; 
+    height: 400px; 
+    margin-bottom: 10px; 
+    border-radius: 15px; 
+    object-fit: cover; 
+}
+
+#start-container h1 {
+    color: #c2185b;
+    font-size: 2.2em;
+}
+
+#start-container p {
+    font-size: 1.2em;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+#startButton {
+    background-color: #4CAF50; 
+    color: white;
+    padding: 15px 40px;
+    font-size: 1.3em;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+#startButton:hover {
+    transform: scale(1.1);
+    background-color: #45a049;
+}
+
+
+/* ----- ESTILOS DE LA HISTORIA (PANTALLA 2) ----- */
+#story-container {
+    text-align: center;
+    background: white;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.slide {
+    display: none; 
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.slide.active {
+    display: block; 
+    opacity: 1;
+}
+
+.slide img {
+    max-width: 100%;
+    height: 400px; 
+    border-radius: 15px;
+    margin-bottom: 20px;
+    object-fit: cover; 
+}
+
+.slide h2 {
+    color: #c2185b;
+    margin-bottom: 10px;
+}
+
+.slide p {
+    color: #333;
+    font-size: 1.2em;
+}
+
+#nextButton {
+    background-color: #c2185b;
+    color: white;
+    padding: 15px 30px;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s;
+}
+
+#nextButton:hover {
+    background-color: #ad1457;
+}
+
+
+/* ----- ESTILOS DE LA PROPUESTA (PANTALLA 3) ----- */
+#proposal-container {
+    text-align: center;
+}
+
+#proposal-container img {
+    width: 200px;
+    height: 200px;
+    margin-bottom: 20px;
+}
+
+#proposal-container h1 {
+    color: #c2185b;
+    font-size: 2.5em;
+}
+
+.buttons {
+    margin-top: 30px;
+    position: relative; 
+    height: 100px; 
+}
+
+button {
+    padding: 15px 30px;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin: 0 10px;
+}
+
+#yesButton {
+    background-color: #4CAF50;
+    color: white;
+    transform-origin: center;
+}
+
+#yesButton:hover {
+    transform: scale(1.1);
+}
+
+#noButton {
+    background-color: #f44336;
+    color: white;
+    position: absolute; 
+}
+
+.volume-note {
+    display: block; 
+    margin-top: 15px; 
+    font-size: 1em;
+    font-style: italic;
+    color: #555; 
+}
+
+
+/* ----- ESTILOS DEL MENSAJE FINAL (PANTALLA 4) ----- */
+.hidden {
+    display: none; 
+}
+
+#mensajeFinal {
+    text-align: center;
+    background: linear-gradient(135deg, #fff1f5 0%, #ffe4e1 100%);
+    padding: 50px;
+    border-radius: 30px;
+    box-shadow: 0 10px 40px rgba(194, 24, 91, 0.2);
+    animation: fadeIn 1s ease-in;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: scale(0.9); }
+    to { opacity: 1; transform: scale(1); }
+}
+
+.gif-final {
+    width: 250px;
+    height: 250px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+
+#mensajeFinal h1 {
+    color: #4CAF50;
+    font-size: 3em;
+    margin: 0;
+}
+
+#mensajeFinal h2 {
+    color: #333;
+    font-size: 1.5em;
+    margin-top: 10px;
+}
+
+.titulo-cancion {
+    font-size: 2.5em !important;
+    color: #c2185b !important;
+    margin: 10px 0;
+}
+
+.lyrics {
+    font-family: 'Georgia', serif;
+    font-style: italic;
+    font-size: 1.4em;
+    color: #555;
+    margin: 10px 0;
+}
+
+.te-amo {
+    font-size: 1.8em;
+    font-weight: bold;
+    color: #c2185b;
+    margin-top: 20px;
+}
