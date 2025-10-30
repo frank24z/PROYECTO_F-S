@@ -277,3 +277,71 @@ button {
     color: #c2185b;
     margin-top: 20px;
 }
+
+
+
+/* ============================================== */
+/* ----- AQUÍ COMIENZA EL CÓDIGO PARA MÓVIL ----- */
+/* ============================================== */
+
+@media (max-width: 600px) {
+
+    /* 1. Ajusta los "cuadros blancos" principales */
+    #password-container,
+    #start-container,
+    #story-container,
+    #proposal-container,
+    #mensajeFinal {
+        width: 90%;         /* Ocuparán el 90% de la pantalla */
+        padding: 20px;      /* Menos espacio interior */
+        height: auto;       /* Altura automática */
+        box-sizing: border-box; /* Controla el padding */
+    }
+
+    /* 2. Ajusta el GIF de inicio (El problema principal) */
+    .start-gif {
+        width: 100%;        /* Ocupará el 100% de su cuadro */
+        height: auto;       /* Altura automática para no deformarse */
+    }
+
+    /* 3. Ajusta las imágenes de la historia */
+    .slide img {
+        height: 250px;      /* Una altura más razonable para móvil */
+    }
+
+    /* 4. Ajusta el GIF de celebración final */
+    .gif-final {
+        width: 200px;
+        height: 200px;
+    }
+
+    /* 5. Reduce el tamaño de las fuentes */
+    h1, .titulo-cancion {
+        font-size: 1.8em;
+    }
+    
+    #proposal-container h1 {
+         font-size: 2em; /* La de la propuesta un poco más grande */
+    }
+
+    h2 {
+        font-size: 1.3em;
+    }
+
+    p, .lyrics, .volume-note {
+        font-size: 1em;
+    }
+
+    /* 6. Ajusta botones y campos */
+    #passwordInput,
+    #passwordButton,
+    #startButton {
+        width: 100%; /* Que ocupen todo el ancho */
+        box-sizing: border-box; /* Para que el padding no sume */
+    }
+
+    /* 7. Da más espacio al botón "No" para moverse */
+    .buttons {
+         height: 150px; 
+    }
+}
