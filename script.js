@@ -1,9 +1,7 @@
 // Espera a que toda la página se cargue
 document.addEventListener('DOMContentLoaded', () => {
 
-    // --- CAMBIA ESTA CONTRASEÑA ---
-    // He puesto "251218" (25 de Diciembre 2018) como ejemplo.
-    // ¡Pon la tuya! Puede ser números o texto.
+    
     const LA_CONTRASEÑA = "2419";
 
     // --- IDs DE ELEMENTOS ---
